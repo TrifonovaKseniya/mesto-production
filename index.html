@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-CUuqqikv.js"></script>
+    <script type="module" crossorigin src="./assets/index-BWuKF1oA.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CeMcR-0y.css">
   </head>
   <body class="page">
@@ -54,8 +54,9 @@
                 class="popup__input popup__input_type_name"
                 placeholder="Имя"
                 minlength="2"
+                maxlength="40"
                 required
-                data-maxlength="40"
+                pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
             </label>
@@ -69,8 +70,8 @@
                 class="popup__input popup__input_type_description"
                 placeholder="Занятие"
                 minlength="2"
+                maxlength="200"
                 required
-                data-maxlength="200"
               />
             </label>
             <span class="popup__error" id="user-description-error"></span>
@@ -100,8 +101,9 @@
                 class="popup__input popup__input_type_card-name"
                 placeholder="Название"
                 minlength="2"
+                maxlength="30"
                 required
-                data-maxlength="30"
+                pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
             </label>
